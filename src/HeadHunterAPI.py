@@ -17,7 +17,3 @@ class HeadHunterAPI(AbstractAPI):
             self.vacancies.extend(vacancies)
             self.params['page'] += 1
             return self.vacancies
-
-
-a = HeadHunterAPI()
-b = a.get_vacancies('python')

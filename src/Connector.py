@@ -6,7 +6,7 @@ class Connector(AbstractProcessingVacancies):
 
     def __init__(self, data):
         self.data = data
-        self.file = '../data/vacancies.json'
+        self.file = 'data/vacancies.json'
 
     def insert(self):
         """Добавляет данные в JSON файл"""
@@ -32,15 +32,3 @@ class Connector(AbstractProcessingVacancies):
         """Очищает JSON файл"""
         with open(self.file, 'w', encoding='utf8'):
             pass
-
-#
-# c = Connector(hhh)
-# # # #
-# # c.insert()
-# # c = Connector(hhhh)
-# # c.insert()
-# # # c.search('Менеджер')
-# print(c.search('город'))
-# # r = c.search('Диспетчер')
-# # print(r)
-# c.clear()
